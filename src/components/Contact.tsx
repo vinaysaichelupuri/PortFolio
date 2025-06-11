@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
@@ -37,41 +36,52 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="flex items-center">
-                <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-3 rounded-full mr-4">
-                  <Mail className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">Email</h3>
-                  <p className="text-gray-300">john.doe@example.com</p>
+            <a href="mailto:chelpurivinaysai02@gmail.com" className="block">
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 cursor-pointer hover:scale-105 transition-transform duration-200">
+                <div className="flex items-center">
+                  <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-3 rounded-full mr-4">
+                    <Mail className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">Email</h3>
+                    <p className="text-gray-300">chelpurivinaysai02@gmail.com</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="flex items-center">
-                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-3 rounded-full mr-4">
-                  <Phone className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">Phone</h3>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+            <a href="tel:+919502147010" className="block">
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 cursor-pointer hover:scale-105 transition-transform duration-200">
+                <div className="flex items-center">
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-3 rounded-full mr-4">
+                    <Phone className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">Phone</h3>
+                    <p className="text-gray-300">+91 9502147010</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="flex items-center">
-                <div className="bg-gradient-to-r from-orange-500 to-red-500 p-3 rounded-full mr-4">
-                  <MapPin className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">Location</h3>
-                  <p className="text-gray-300">San Francisco, CA</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Hanamkonda,+Telangana"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 cursor-pointer hover:scale-105 transition-transform duration-200">
+                <div className="flex items-center">
+                  <div className="bg-gradient-to-r from-orange-500 to-red-500 p-3 rounded-full mr-4">
+                    <MapPin className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">Location</h3>
+                    <p className="text-gray-300">Hanamkonda, Telangana</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">

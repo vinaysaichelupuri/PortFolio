@@ -2,11 +2,13 @@
 const Skills = () => {
   const skills = [
     { name: "React", level: 90, color: "from-blue-500 to-cyan-500" },
+     { name: "React Native", level: 90, color: "from-blue-500 to-cyan-500" },
     { name: "TypeScript", level: 85, color: "from-blue-600 to-blue-800" },
     { name: "Node.js", level: 80, color: "from-green-500 to-emerald-500" },
-    { name: "Python", level: 75, color: "from-yellow-500 to-orange-500" },
     { name: "UI/UX Design", level: 85, color: "from-purple-500 to-pink-500" },
-    { name: "MongoDB", level: 70, color: "from-green-600 to-green-800" },
+    { name: "MongoDB", level: 80, color: "from-green-600 to-green-800" },
+    { name: "PostgreSQL", level: 70, color: "from-green-600 to-green-800" },
+    { name: "Stripe", level: 95, color: "from-green-600 to-green-800" },
   ];
 
   return (

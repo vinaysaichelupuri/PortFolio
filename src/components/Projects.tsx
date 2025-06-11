@@ -1,44 +1,45 @@
 
 import { ExternalLink, Github } from "lucide-react";
+import quickchat from "../../assets/QuickChat.jpg";
+import petbuddy from "../../assets/PetBuddy.jpg";
+import fingrow from "../../assets/FinGrow.jpg";
+import hanami from "../../assets/Hanami.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "E-Commerce Platform (Hanami)",
       description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
+      image:hanami,
+      tech: ["React", "Node.js", "MongoDB",],
       githubUrl: "#",
       gradient: "from-blue-500 to-purple-600"
     },
+       {
+      title: "FinGrow (Expense Tracker)",
+      description: "A modern, responsive portfolio website showcasing creative design and smooth animations built with React and Tailwind CSS.",
+      image: fingrow,
+        tech: ["React Native", "PostgreSQL", "Nodejs", "Express"],
+      githubUrl: "#",
+      gradient: "from-purple-500 to-pink-600"
+    },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      tech: ["React", "Firebase", "Tailwind CSS", "Socket.io"],
-      liveUrl: "#",
+      title: "Chatting Application (QuickChat)",
+      description: "A real-time mobile chatting application built with React and Firebase, featuring user authentication,profile management,notifications and single login.",
+      image: quickchat,
+      tech: ["React", "Firebase", "PostgreSQL", "Socket.io"],
       githubUrl: "#",
       gradient: "from-emerald-500 to-teal-600"
     },
     {
-      title: "Weather Dashboard",
+      title: "Pet Buddy (Pet Maganement System)",
       description: "A responsive weather application with location-based forecasts, interactive maps, and historical weather data visualization.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      tech: ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
-      liveUrl: "#",
+      image: petbuddy,
+      tech: ["React Native", "MongoDB", "Nodejs", "Express"],
       githubUrl: "#",
       gradient: "from-orange-500 to-red-600"
     },
-    {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing creative design and smooth animations built with React and Tailwind CSS.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      tech: ["React", "Tailwind CSS", "Framer Motion", "Netlify"],
-      liveUrl: "#",
-      githubUrl: "#",
-      gradient: "from-purple-500 to-pink-600"
-    }
+ 
   ];
 
   return (
@@ -84,13 +85,6 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.liveUrl}
-                    className="flex items-center text-white hover:text-emerald-400 transition-colors duration-200"
-                  >
-                    <ExternalLink size={18} className="mr-2" />
-                    Live Demo
-                  </a>
                   <a
                     href={project.githubUrl}
                     className="flex items-center text-white hover:text-emerald-400 transition-colors duration-200"

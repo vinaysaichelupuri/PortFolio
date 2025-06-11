@@ -10,8 +10,7 @@ const About = () => {
             About <span className="text-emerald-400">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate developer with 5+ years of experience creating digital solutions 
-            that combine beautiful design with powerful functionality.
+  Full Stack Developer & UI/UX Designer passionate about crafting user-friendly web and mobile apps with React, React Native, and Node.js. Skilled in MongoDB, PostgreSQL, and MySQL.
           </p>
         </div>
 
@@ -57,7 +56,7 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-4">
-              <p className="text-white font-bold text-lg">5+ Years</p>
+              <p className="text-white font-bold text-lg">1+ Years</p>
               <p className="text-white/90">Experience</p>
             </div>
           </div>
