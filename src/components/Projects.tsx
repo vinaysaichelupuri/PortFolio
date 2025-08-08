@@ -4,6 +4,9 @@ import quickchat from "../../assets/QuickChat.jpg";
 import petbuddy from "../../assets/PetBuddy.jpg";
 import fingrow from "../../assets/FinGrow.jpg";
 import hanami from "../../assets/Hanami.jpg";
+import RetroBoard from "../../assets/RetroBoard.jpg";
+import TypeRush from "../../assets/TypeRush.jpg";
+import Vinvert from "../../assets/imageConverter.jpg";
 
 const Projects = () => {
   const projects = [
@@ -17,7 +20,7 @@ const Projects = () => {
     },
        {
       title: "FinGrow (Expense Tracker)",
-      description: "A modern, responsive portfolio website showcasing creative design and smooth animations built with React and Tailwind CSS.",
+      description: "It is a personal finance management application that helps users track their expenses, set budgets, and analyze their spending habits.",
       image: fingrow,
         tech: ["React Native", "PostgreSQL", "Nodejs", "Express"],
       githubUrl: "#",
@@ -28,15 +31,39 @@ const Projects = () => {
       description: "A real-time mobile chatting application built with React and Firebase, featuring user authentication,profile management,notifications and single login.",
       image: quickchat,
       tech: ["React", "Firebase", "PostgreSQL", "Socket.io"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/NikithaMedikonda/quickchat-frontend",
       gradient: "from-emerald-500 to-teal-600"
     },
     {
       title: "Pet Buddy (Pet Maganement System)",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and historical weather data visualization.",
+      description: "A mobile application designed to help pet owners manage their pets' health, appointments, and daily activities.",
       image: petbuddy,
       tech: ["React Native", "MongoDB", "Nodejs", "Express"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/vinaysaichelupuri/PetBuddy",
+      gradient: "from-orange-500 to-red-600"
+    },
+    {
+      title: "Retro Board",
+      description: "It is simple retro board application that allows users to create and manage retrospectives, providing a platform for team collaboration and feedback.",
+      image: RetroBoard,
+      tech: ["React", "Firebase", "Tailwind CSS" ],
+      githubUrl: "https://github.com/vinaysaichelupuri/RetroBoard",
+      gradient: "from-orange-500 to-red-600"
+    },
+    {
+      title: "TypeRush",
+      description: "A simple typing game application that helps users improve their typing speed and accuracy through interactive challenges.",
+      image: TypeRush,
+      tech: ["React", "Tailwind CSS", "Firebase"],
+      githubUrl: "https://github.com/vinaysaichelupuri/TypeRush",
+      gradient: "from-orange-500 to-red-600"
+    },
+        {
+      title: "Vinvert",
+      description: "It is simple image converter application that converts image formats from one to another and reduce the size of the image.",
+      image: Vinvert,
+      tech: ["React", "Tailwind CSS",],
+      githubUrl: "https://github.com/vinaysaichelupuri/Vinvert",
       gradient: "from-orange-500 to-red-600"
     },
  
