@@ -16,7 +16,8 @@ const Projects = () => {
       image:hanami,
       tech: ["React", "Node.js", "MongoDB",],
       githubUrl: "#",
-      gradient: "from-blue-500 to-purple-600"
+      gradient: "from-blue-500 to-purple-600",
+      demolink:'https://hanami-4aav.onrender.com'
     },
        {
       title: "FinGrow (Expense Tracker)",
@@ -24,7 +25,8 @@ const Projects = () => {
       image: fingrow,
         tech: ["React Native", "PostgreSQL", "Nodejs", "Express"],
       githubUrl: "#",
-      gradient: "from-purple-500 to-pink-600"
+      gradient: "from-purple-500 to-pink-600",
+      demolink:'#'
     },
     {
       title: "Chatting Application (QuickChat)",
@@ -32,7 +34,8 @@ const Projects = () => {
       image: quickchat,
       tech: ["React", "Firebase", "PostgreSQL", "Socket.io"],
       githubUrl: "https://github.com/NikithaMedikonda/quickchat-frontend",
-      gradient: "from-emerald-500 to-teal-600"
+      gradient: "from-emerald-500 to-teal-600",
+      demolink:'#'
     },
     {
       title: "Pet Buddy (Pet Maganement System)",
@@ -40,7 +43,8 @@ const Projects = () => {
       image: petbuddy,
       tech: ["React Native", "MongoDB", "Nodejs", "Express"],
       githubUrl: "https://github.com/vinaysaichelupuri/PetBuddy",
-      gradient: "from-orange-500 to-red-600"
+      gradient: "from-orange-500 to-red-600",
+      demolink:'#'
     },
     {
       title: "Retro Board",
@@ -48,7 +52,8 @@ const Projects = () => {
       image: RetroBoard,
       tech: ["React", "Firebase", "Tailwind CSS" ],
       githubUrl: "https://github.com/vinaysaichelupuri/RetroBoard",
-      gradient: "from-orange-500 to-red-600"
+      gradient: "from-orange-500 to-red-600",
+      demolink:'https://retroboard-3vps.onrender.com/'
     },
     {
       title: "TypeRush",
@@ -56,7 +61,8 @@ const Projects = () => {
       image: TypeRush,
       tech: ["React", "Tailwind CSS", "Firebase"],
       githubUrl: "https://github.com/vinaysaichelupuri/TypeRush",
-      gradient: "from-orange-500 to-red-600"
+      gradient: "from-orange-500 to-red-600",
+      demolink:'https://typerush-6hvs.onrender.com/'
     },
         {
       title: "Vinvert",
@@ -64,7 +70,8 @@ const Projects = () => {
       image: Vinvert,
       tech: ["React", "Tailwind CSS",],
       githubUrl: "https://github.com/vinaysaichelupuri/Vinvert",
-      gradient: "from-orange-500 to-red-600"
+      gradient: "from-orange-500 to-red-600",
+      demolink:'https://vinvert.onrender.com/'
     },
  
   ];
@@ -118,6 +125,15 @@ const Projects = () => {
                   >
                     <Github size={18} className="mr-2" />
                     Source Code
+                  </a>
+                </div>
+                <div className="flex space-x-4">
+                  <a
+                    href={project.demolink}
+                    className="flex items-center text-white hover:text-emerald-400 transition-colors duration-200"
+                  >
+                    <Github size={18} className="mr-2" />
+                    Live demo
                   </a>
                 </div>
               </div>
