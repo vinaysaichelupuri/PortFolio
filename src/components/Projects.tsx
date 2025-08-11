@@ -15,7 +15,7 @@ const Projects = () => {
       description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
       image:hanami,
       tech: ["React", "Node.js", "MongoDB",],
-      githubUrl: "#",
+      githubUrl: "https://github.com/vinaysaichelupuri/Hanami",
       gradient: "from-blue-500 to-purple-600",
       demolink:'https://hanami-4aav.onrender.com'
     },
@@ -132,7 +132,7 @@ const Projects = () => {
                     href={project.demolink}
                     className="flex items-center text-white hover:text-emerald-400 transition-colors duration-200"
                   >
-                    <Github size={18} className="mr-2" />
+                    <ExternalLink size={18} className="mr-2" />
                     Live demo
                   </a>
                 </div>

@@ -56,7 +56,7 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-4">
-              <p className="text-white font-bold text-lg">1+ Years</p>
+              <p className="text-white font-bold text-lg">1.5+ Years</p>
               <p className="text-white/90">Experience</p>
             </div>
           </div>

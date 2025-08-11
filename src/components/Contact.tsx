@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
 
@@ -8,12 +9,25 @@ const Contact = () => {
     email: "",
     message: ""
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  try {
+    await emailjs.send(
+      "service_g1gtzsw",
+      "template_fmni7gh",
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      "9eL3sHNFo3JGpmq5A"
+    );
     toast.success("Message sent successfully! I'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
-  };
+  } catch (error) {
+    toast.error("Failed to send message. Please try again later.");
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
