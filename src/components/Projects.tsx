@@ -7,6 +7,7 @@ import hanami from "../../assets/Hanami.jpg";
 import RetroBoard from "../../assets/RetroBoard.jpg";
 import TypeRush from "../../assets/TypeRush.jpg";
 import Vinvert from "../../assets/imageConverter.jpg";
+import SecurePad from '../../assets/SecurePad.png'
 
 const Projects = () => {
   const projects = [
@@ -72,6 +73,15 @@ const Projects = () => {
       githubUrl: "https://github.com/vinaysaichelupuri/Vinvert",
       gradient: "from-orange-500 to-red-600",
       demolink:'https://vinvert.onrender.com/'
+    },
+          {
+      title: "SecurePad",
+      description: "Simple password-protected text editor with cloud sync. Enter your password to access your secure writing space.",
+      image: SecurePad,
+      tech: ["React", "Tailwind CSS","Firebase"],
+      githubUrl: "https://github.com/vinaysaichelupuri/securepad",
+      gradient: "from-orange-500 to-red-600",
+      demolink:'https://securepad.onrender.com/'
     },
  
   ];
